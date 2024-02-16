@@ -24,8 +24,8 @@ except ValueError:
     continue
     
 if height <= 0 or weight <= 0: 
-        print("negative numbers are not allowed. \n")
-        continue 
+    print("negative numbers are not allowed. \n")
+    continue 
 else: 
     break 
 
