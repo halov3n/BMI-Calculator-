@@ -20,11 +20,11 @@ try:
     height = float(height)
     weight = float(weight)
 except ValueError: 
-    print("Invalid input. Please input numbers/n")
+    print("Invalid input. Please input numbers. \n")
     continue
     
 if height <= 0 or weight <= 0: 
-        print("negative numbers are not allowed")
+        print("negative numbers are not allowed. \n")
         continue 
 else: 
     break 
