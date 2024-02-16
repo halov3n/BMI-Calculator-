@@ -16,13 +16,7 @@ weight = st.number_input("Enter your weight in KG", step = 0.1)
 
 height = st.number_input("Enter your height in Meters", step = 0.01)
 
-def calculate_bmi():
-    try:
-        height = float(height)
-        weight = float(weight)
-    except ValueError: 
-        st.success("Invalid input. Please input numbers. \n")
-        
+def calculate_bmi():        
     if height <= 0 or weight <= 0: 
         st.success("negative numbers are not allowed. \n")
 
