@@ -16,19 +16,21 @@ weight = st.number_input("Enter your weight in KG", step = 0.1)
 
 height = st.number_input("Enter your height in Meters", step = 0.01)
 
-try:
-    height = float(height)
-    weight = float(weight)
-except ValueError: 
-    print("Invalid input. Please input numbers. \n")
-    continue
-    
-if height <= 0 or weight <= 0: 
-    print("negative numbers are not allowed. \n")
-    continue 
-else: 
-    break 
+def calculate_bmi():
+    try:
+        height = float(height)
+        weight = float(weight)
+    except ValueError: 
+        st.success("Invalid input. Please input numbers. \n")
+        continue
+        
+    if height <= 0 or weight <= 0: 
+        st.success("negative numbers are not allowed. \n")
+        continue 
+    else: 
+        break 
 
+'''
 def calculate_bmi():
     bmi = weight/(height)**2
     bmi_thresholds = [18.5, 23, 27.5]
@@ -42,6 +44,7 @@ def calculate_bmi():
     else:
         level = level_labels[3]
     st. success(f"Your BMI is {bmi}. You are at {level}")
+'''
 
 button = st.button("Calculate BMI")
 if button:
