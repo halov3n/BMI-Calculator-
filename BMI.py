@@ -20,6 +20,10 @@ def calculate_bmi():
     if height <= 0 or weight <= 0: 
         st.success("negative numbers are not allowed. \n")
 
+def calculate_bmi():        
+    if height >= 2.74 or weight >= 648: 
+        st.success("Invalid height and weight. \n")
+
     bmi = weight/(height)**2
     bmi_thresholds = [18.5, 23, 27.5]
     level_labels = ['Risk of nutritional deficiency','Low Risk','Moderate Risk','High Risk']
