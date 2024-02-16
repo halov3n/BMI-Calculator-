@@ -22,6 +22,7 @@ try:
 except ValueError: 
     print("Invalid input. Please input numbers/n")
     continue
+    
 if height <= 0 or weight <= 0: 
         print("negative numbers are not allowed")
         continue 
