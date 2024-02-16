@@ -22,13 +22,9 @@ def calculate_bmi():
         weight = float(weight)
     except ValueError: 
         st.success("Invalid input. Please input numbers. \n")
-        continue
         
     if height <= 0 or weight <= 0: 
         st.success("negative numbers are not allowed. \n")
-        continue 
-    else: 
-        break 
 
 '''
 def calculate_bmi():
