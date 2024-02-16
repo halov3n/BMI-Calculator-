@@ -21,7 +21,7 @@ try:
     weight = float(weight)
 except ValueError: 
     print("Invalid input. Please input numbers/n")
-    exit ()
+    continue
 
 def calculate_bmi():
     bmi = weight/(height)**2
