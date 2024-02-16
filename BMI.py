@@ -22,6 +22,11 @@ try:
 except ValueError: 
     print("Invalid input. Please input numbers/n")
     continue
+if height <= 0 or weight <= 0: 
+        print("negative numbers are not allowed")
+        continue 
+else: 
+    break 
 
 def calculate_bmi():
     bmi = weight/(height)**2
@@ -33,9 +38,6 @@ def calculate_bmi():
         level = level_labels[1]
     elif bmi <= bmi_thresholds[2]:
         level = level_labels[2]
-    elif height <= 0 or weight <= 0: 
-        print("negative numbers are not allowed")
-        continue 
     else:
         level = level_labels[3]
     st. success(f"Your BMI is {bmi}. You are at {level}")
